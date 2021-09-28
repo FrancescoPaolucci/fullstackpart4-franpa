@@ -9,3 +9,18 @@ Content-Type: application/json
 }
 ###
 GET http://localhost:3001/api/blogs/
+
+###
+
+DELETE http://localhost:3001/api/blogs/5a422aa71b54a676134d17f8
+ 
+###
+PUT http://localhost:3001/api/blogs/614f522c47bcd35cf30bd3a4
+Content-Type: application/json
+
+{
+"title": "WEROBY",
+"author": "Rooney3",
+"url": "www.rooney.com4",
+"likes": 345678393232
+}
