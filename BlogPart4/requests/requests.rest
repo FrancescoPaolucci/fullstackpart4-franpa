@@ -1,12 +1,11 @@
 POST http://localhost:3001/api/blogs/
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndheW5lIiwiaWQiOiI2MTUzMTk2OWU1MTQxNTg1ZmU3MTJhYzEiLCJpYXQiOjE2MzI5MDQyNDcsImV4cCI6MTYzMjkwNzg0N30.eHXa3onM19GSOcdCsoCIoNc7PX3XYmMeg8ZSAkPINuM
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndheW5lIiwiaWQiOiI2MTUzMTk2OWU1MTQxNTg1ZmU3MTJhYzEiLCJpYXQiOjE2MzI5MTgzMjMsImV4cCI6MTYzMjkyMTkyM30.qxWSzWf9-Msr7dNv6xUUbkK39XkmGyHAcbeHzx8lU_U
 
 {
-"title": "BLOGGO DI WAYNE NUOVO MERCOLEDI2",
+"title": "BLOGGO DI WAYNE NUOVO MERCOLEDI11",
+
 "author": "DEPA",
-"url": "RABISECCO",
-"likes": 875678,
 "userId":"61531969e5141585fe712ac1s"
 }
 ###

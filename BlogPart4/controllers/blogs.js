@@ -33,10 +33,14 @@ blogsRouter.post("/", middleware.userExtractor, async (request, response) => {
     likes: body.likes,
     user: user._id,
   });
-  const savedBlog = await blog.save();
-  user.blogs = user.blogs.concat(savedBlog._id);
-  await user.save();
-  response.json(savedBlog);
+  try {
+    const savedBlog = await blog.save();
+    user.blogs = user.blogs.concat(savedBlog._id);
+    await user.save();
+    response.json(savedBlog);
+  } catch (error) {
+    response.status(400).json(error);
+  }
 });
 
 blogsRouter.delete(
