@@ -29,9 +29,9 @@ test("all blogs are returned", async () => {
 
 test(" a blog is added ", async () => {
   const newBlog = {
-    _id: "5a422aa71b54a676134d17f8",
-    title: "New blog is added",
-    author: "New blog is added",
+    _id: "6154252901eab9615b8e47e1",
+    title: "New blog is added2",
+    author: "wayne",
     url: "New blog is added",
     likes: 9,
     __v: 0,
@@ -39,6 +39,10 @@ test(" a blog is added ", async () => {
 
   await api
     .post("/api/blogs")
+    .set(
+      "Authorization",
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndheW5lIiwiaWQiOiI2MTUzMTk2OWU1MTQxNTg1ZmU3MTJhYzEiLCJpYXQiOjE2MzI5MDUyODksImV4cCI6MTYzMjkwODg4OX0.w2CqAs8CX2OuJe-uytGebu-HsXkn5qPM1KYrngdBt9o"
+    )
     .send(newBlog)
     .expect(201)
     .expect("Content-Type", /application\/json/);
