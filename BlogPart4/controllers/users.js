@@ -23,10 +23,12 @@ usersRouter.post("/", async (request, response) => {
       name: body.name,
       passwordHash,
     });
-
-    const savedUser = await user.save();
-
-    response.json(savedUser);
+    try {
+      const savedUser = await user.save();
+      response.json(savedUser);
+    } catch (error) {
+      response.status(400).json(error);
+    }
   }
 });
 

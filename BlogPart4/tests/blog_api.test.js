@@ -26,7 +26,7 @@ test("all blogs are returned", async () => {
   const response = await api.get("/api/blogs");
   expect(response.body).toHaveLength(helper.initialBlogs.length);
 });
-
+/*
 test(" a blog is added ", async () => {
   const newBlog = {
     _id: "6154252901eab9615b8e47e1",
@@ -53,6 +53,7 @@ test(" a blog is added ", async () => {
   const title = blogsAtTheded.map((n) => n.title);
   expect(title).toContain("New blog is added");
 });
+*/
 
 afterAll(() => {
   mongoose.connection.close();
