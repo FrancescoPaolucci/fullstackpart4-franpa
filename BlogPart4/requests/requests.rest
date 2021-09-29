@@ -1,21 +1,22 @@
 POST http://localhost:3001/api/blogs/
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndheW5lIiwiaWQiOiI2MTUzMTk2OWU1MTQxNTg1ZmU3MTJhYzEiLCJpYXQiOjE2MzI4MzU5NjAsImV4cCI6MTYzMjgzOTU2MH0.a3KAatN25OofmTovT8V6FiSpET0nkq0LYFYj4WA-FeY
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndheW5lIiwiaWQiOiI2MTUzMTk2OWU1MTQxNTg1ZmU3MTJhYzEiLCJpYXQiOjE2MzI4OTk3MTQsImV4cCI6MTYzMjkwMzMxNH0.dF1v-ZB5u-2PB9M2CyjNNq6mQAhdIeQsgGaJ_uKHNSs
 
 {
-"title": "BLOG DI WAYNE",
-"author": "WAYNE",
-"url": "RONDOOOOOOOO",
+"title": "BLOGGO DI WAYNE NUOVO MERCOLEDI2",
+"author": "DEPA",
+"url": "RABISECCO",
 "likes": 875678,
-"userId":"61531969e5141585fe712ac1"
+"userId":"61531969e5141585fe712ac1s"
 }
 ###
 GET http://localhost:3001/api/blogs/
 
 ###
 
-DELETE http://localhost:3001/api/blogs/615319c8e5141585fe712ac9
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndheW5lIiwiaWQiOI2MTUzMTk2OWU1MTQxNTg1ZmU3MTJhYzEiLCJpYXQiOjE2MzI4MzU5NjAsImV4cCI6MTYzMjgzOTU2MH0.a3KAatN25OofmTovT8V6FiSpET0nkq0LYFYj4WA-FeY
+DELETE http://localhost:3001/api/blogs/61541ccab123ebfb03f538a9
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndheW5lIiwiaWQiOiI2MTUzMTk2OWU1MTQxNTg1ZmU3MTJhYzEiLCJpYXQiOjE2MzI4OTk3MTQsImV4cCI6MTYzMjkwMzMxNH0.dF1v-ZB5u-2PB9M2CyjNNq6mQAhdIeQsgGaJ_uKHNSs
+
 ###
 PUT http://localhost:3001/api/blogs/614f522c47bcd35cf30bd3a4
 Content-Type: application/json
